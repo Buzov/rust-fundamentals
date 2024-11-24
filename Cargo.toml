@@ -1,0 +1,5 @@
+[package]
+name = "rust-fundamentals"
+version = "0.0.1"
+authors = ["Artur <buzov.artur@gmail.com>"]
+edition = "2024"
