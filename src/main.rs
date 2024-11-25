@@ -1,6 +1,7 @@
 mod types;
 mod std;
 mod syntax;
+mod sequences_and_maps;
 
 use crate::types::number::number_type;
 use crate::types::string::string_slice;
