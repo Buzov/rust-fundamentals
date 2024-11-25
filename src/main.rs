@@ -1,5 +1,6 @@
 mod types;
 mod std;
+mod syntax;
 
 use crate::types::number::number_type;
 use crate::types::string::string_slice;
@@ -8,6 +9,7 @@ use crate::types::string::conversion_between_string_and_str;
 use crate::types::string::c_string;
 use crate::types::string::os_string;
 use crate::types::string::cow_string;
+use crate::types::tuple::tuple;
 
 fn main() {
 
@@ -21,5 +23,8 @@ fn main() {
     c_string();
     os_string();
     cow_string();
+
+    println!("\n---Tuples----");
+    tuple();
 
 }
