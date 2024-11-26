@@ -2,6 +2,7 @@ mod types;
 mod std;
 mod syntax;
 mod sequences_and_maps;
+mod memory;
 
 use crate::types::number::number_type;
 use crate::types::string::string_slice;
@@ -11,6 +12,7 @@ use crate::types::string::c_string;
 use crate::types::string::os_string;
 use crate::types::string::cow_string;
 use crate::types::tuple::tuple;
+use crate::memory::zero_struct::zero_sized_types;
 
 fn main() {
 
@@ -27,5 +29,8 @@ fn main() {
 
     println!("\n---Tuples----");
     tuple();
+
+    println!("\n---Memory----");
+    zero_sized_types();
 
 }
