@@ -13,6 +13,7 @@ use crate::types::string::os_string;
 use crate::types::string::cow_string;
 use crate::types::tuple::tuple;
 use crate::memory::zero_struct::zero_sized_types;
+use crate::syntax::r#struct::test_base_traits;
 
 fn main() {
 
@@ -32,5 +33,8 @@ fn main() {
 
     println!("\n---Memory----");
     zero_sized_types();
+
+    println!("\n---Struct----");
+    test_base_traits();
 
 }
