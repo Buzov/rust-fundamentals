@@ -3,6 +3,7 @@ trait Vehicle {
 }
 
 struct Truck;
+// next_truck: Option<Box<Truck>>,
 
 impl Vehicle for Truck {
     fn drive(&self) {
