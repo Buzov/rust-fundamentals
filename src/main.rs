@@ -3,6 +3,7 @@ mod std;
 mod syntax;
 mod sequences_and_maps;
 mod memory;
+mod smart_pointer;
 
 use crate::types::number::number_type;
 use crate::types::string::string_slice;
@@ -14,6 +15,8 @@ use crate::types::string::cow_string;
 use crate::types::tuple::tuple;
 use crate::memory::zero_struct::zero_sized_types;
 use crate::syntax::r#struct::test_base_traits;
+
+use crate::smart_pointer::box_pointer::run_truck;
 
 fn main() {
 
@@ -36,5 +39,8 @@ fn main() {
 
     println!("\n---Struct----");
     test_base_traits();
+
+    println!("\n---Smart Pointer----");
+    run_truck();
 
 }
