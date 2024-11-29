@@ -13,6 +13,10 @@ pub fn test_fn_like_parameter() {
     println!("fn_like_parameter result: {}", fn_like_parameter(f, 20));
 }
 
-fn fn_like_parameter(func: fn(i32) -> (i32), i: i32) -> i32 {
+fn fn_like_parameter(func: fn(i32) -> i32, i: i32) -> i32 {
     func(i)
+}
+
+fn tuple_fn(fun: &dyn Fn() -> (f64, f64)) -> (f64, f64) {
+    fun()
 }
