@@ -47,3 +47,19 @@ fn main() {
     run_rc();
     run_arc();
 }
+
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn test_sum() {
+        let result = 2 + 2;
+        assert_eq!(result, 4);
+    }
+
+    #[test]
+    fn test_fail() {
+        let result = 2 * 2;
+        assert!(result != 5, "Result should not be 5, got {}", result);
+    }
+}
+
