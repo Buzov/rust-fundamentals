@@ -18,6 +18,7 @@ use crate::syntax::r#struct::test_base_traits;
 
 use crate::smart_pointer::box_pointer::run_truck;
 use crate::smart_pointer::rc_pointer::run_rc;
+use crate::smart_pointer::arc_pointer::run_arc;
 
 fn main() {
 
@@ -44,4 +45,5 @@ fn main() {
     println!("\n---Smart Pointer----");
     run_truck();
     run_rc();
+    run_arc();
 }

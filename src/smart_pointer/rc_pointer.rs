@@ -28,10 +28,14 @@ pub fn run_rc() -> () {
     let owner1 = Rc::clone(&data);
     let owner2 = Rc::clone(&data);
 
-    println!("Data: {}", data);
-    println!("Owner1: {}", owner1);
-    println!("Owner2: {}", owner2);
+    println!("\nRc Data: {}", data);
+    println!("Owner Rc 1: {}", owner1);
+    println!("Owner Rc 2: {}", owner2);
 
     // Check the number of links.
-    println!("Reference count: {}", Rc::strong_count(&data));
+    println!("Reference count Rc: {}", Rc::strong_count(&data));
+
+    std::mem::drop(owner1);
+
+    println!("Reference count Rc: {}", Rc::strong_count(&data));
 }
