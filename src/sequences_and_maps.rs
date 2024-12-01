@@ -4,3 +4,4 @@ pub(super) mod linked_list;
 pub(super) mod vec_deque;
 pub(super) mod vec_macro;
 pub(super) mod vector;
+pub(super) mod b_tree_set;

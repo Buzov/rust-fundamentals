@@ -1,6 +1,5 @@
-fn main() {
-    use std::collections::HashMap;
-
+use std::collections::HashMap;
+pub fn test_hash_map() {
     // Create map
     let mut fruit_calories = HashMap::new();
 

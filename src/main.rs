@@ -5,6 +5,8 @@ mod sequences_and_maps;
 mod memory;
 mod smart_pointer;
 
+use crate::sequences_and_maps::b_tree_set::test_b_tree_set;
+
 use crate::types::number::number_type;
 use crate::types::string::string_slice;
 use crate::types::string::owned_string;
@@ -41,6 +43,9 @@ fn main() {
 
     println!("\n---Struct----");
     test_base_traits();
+
+    println!("\n---Sequences and maps----");
+    test_b_tree_set();
 
     println!("\n---Smart Pointer----");
     run_truck();
