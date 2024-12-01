@@ -120,3 +120,27 @@ pub fn cow_string() -> () {
     println!("{}", cow);
 }
 
+// https://www.youtube.com/watch?v=CpvzeyzgQdw
+
+// Today we are diving into the surprisingly complicated world of strings. Not only will we learn
+// about the fundamental data structures behind strings, but we'll also discuss how string are
+// implemented in C and more importantly how they are implemented in Rust.
+//
+// FREE Rust cheat sheet: https://letsgetrusty.com/cheatsheet
+//
+// Chapters:
+// 0:00 Overview
+// 0:32 String fundamentals
+// 3:26 Strings in C
+// 4:39 Strings in Rust - safety
+// 5:30 Strings in Rust - Strings and &str
+// 7:37 Strings in Rust - &'static str
+// 8:47 Strings in Rust - Box str
+// 10:03 Strings in Rust - Rc str
+// 10:36 Strings in Rust - Arc str
+// 11:04 Strings in Rust - Byte representations
+// 12:05 Strings in Rust - String literals
+// 13:13 Strings in Rust - Specialized strings
+// 15:13 Strings in Rust - Interoperability strings
+// 18:23 - Summary
+
